@@ -70,17 +70,17 @@ plancart.forEach((card) => {
         card.classList.add('selected');
 
         const selectimg = document.querySelector('.selected');
-        if (selectimg.childNodes[1].src == 'http://127.0.0.1:5500/multi-step-form-main/assets/images/icon-arcade.svg') {
+        if (selectimg.childNodes[1].src == 'http://127.0.0.1:5500/assets/images/icon-arcade.svg') {
             planename.innerText = selectimg.children[1].childNodes[1].innerText;
             planprices.innerText = selectimg.children[1].childNodes[3].innerText;
             total=total+9;
         }
-        else if (selectimg.childNodes[1].src == 'http://127.0.0.1:5500/multi-step-form-main/assets/images/icon-advanced.svg') {
+        else if (selectimg.childNodes[1].src == 'http://127.0.0.1:5500/assets/images/icon-advanced.svg') {
             planename.innerText = selectimg.children[1].childNodes[1].innerText;
             planprices.innerText = selectimg.children[1].childNodes[3].innerText;
             total=total+12;
         }
-        else if (selectimg.childNodes[1].src == 'http://127.0.0.1:5500/multi-step-form-main/assets/images/icon-pro.svg') {
+        else if (selectimg.childNodes[1].src == 'http://127.0.0.1:5500/assets/images/icon-pro.svg') {
             planename.innerText = selectimg.children[1].childNodes[1].innerText;
             planprices.innerText = selectimg.children[1].childNodes[3].innerText;
             total=total+15;

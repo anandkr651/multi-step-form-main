@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <div class="form">
+    <div class="form-container flex">
+      <!-- Sidebar start -->
+      <div class="slide-bar">
+        <div class="step flex active">
+          <div class="circle flex">1</div>
+          <div class="step-content flex">
+            <span>step 1</span>
+            <b>Your info</b>
+          </div>
+        </div>
+        <div class="step flex">
+          <div class="circle flex">2</div>
+          <div class="step-content flex">
+            <span>step 2</span>
+            <b>Select plan</b>
+          </div>
+        </div>
+        <div class="step flex">
+          <div class="circle flex">3</div>
+          <div class="step-content flex">
+            <span>step 3</span>
+            <b>Add-ons</b>
+          </div>
+        </div>
+        <div class="step flex">
+          <div class="circle flex">4</div>
+          <div class="step-content flex">
+            <span>step 4</span>
+            <b>Summary</b>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <!-- Step 1 start -->
+      <div class="step-1 stp">
+        <div class="header">
+          <h1 class="title"> Personal info</h1>
+          <p class="sub-title">Please provide your name, email address, and phone number.</p>
+        </div>
+        <form>
+          <div class="label flex">
+            <label for="name">Name</label>
+            <p class="error">this field is required</p>
+          </div>
+          <input type="text" placeholder="e.g. Stephen King" class="name" required>
+          <div class="label flex">
+            <label for="email">Email Address</label>
+            <p class="error">this field is required</p>
+          </div>
+          <input type="text" placeholder="e.g. stephenking@lorem.com" class="email" required>
+          <div class="label flex">
+            <label for="phone">Phone Number</label>
+            <p class="error">this field is required</p>
+          </div>
+          <input type="text" placeholder="e.g. +1 234 567 890" class="phone" required>
+        </form>
+        <div class="btn flex">
+          <button type="submit" class="next">next step</button>
+        </div>
+      </div>
+      <!-- Step 1 end -->
+
+      <!-- Step 2 start -->
+      <div class="step-2 stp">
+        <div class="header">
+          <h1 class="title">Select your plan</h1>
+          <p class="sub-title">You have the option of monthly or yearly billing.</p>
+        </div>
+        <form>
+          <div class="plan-cart selected">
+            <img src="./assets/images/icon-arcade.svg" alt="">
+            <div class="plan-info">
+              <p class="your-plan ">Arcade</p>
+              <span class="plan-price">$9/mo</span>
+            </div>
+          </div>
+          <div class="plan-cart ">
+            <img src="./assets/images/icon-advanced.svg" alt="">
+            <div class="plan-info">
+              <p class="your-plan">Advanced</p>
+              <span class="plan-price">$12/mo</span>
+            </div>
+          </div>
+          <div class="plan-cart">
+            <img src="./assets/images/icon-pro.svg" alt="">
+            <div class="plan-info">
+              <p class="your-plan">pro</p>
+              <span class="plan-price">$15/mo</span>
+            </div>
+          </div>
+        </form>
+        <div class="switcher">
+          <p class="monthly sw-active">Monthly</p>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <p class="yearly">Yearly</p>
+        </div>
+        <div class="btn flex">
+          <button class="prev" type="button">Go Back</button>
+          <button class="next" type="submit">Next Step</button>
+        </div>
+      </div>
+      <!-- Step 2 end -->
+
+      <!-- Step 3 start -->
+      <div class="step-3 stp">
+        <div class="header">
+          <h1 class="title">Pick add-ons</h1>
+          <p class="sub-title">Add-ons help enhance your gaming experience.</p>
+        </div>
+        <form>
+          <div class="box 1 flex">
+            <input type="checkbox">
+            <div class="description">
+              <h4>Online service</h4>
+              <small>Access to multiplayer games</small>
+            </div>
+            <p class="price">+$1/mo</p>
+          </div>
+          <div class="box 2 flex">
+            <input type="checkbox">
+            <div class="description">
+              <h4>Larger storage</h4>
+              <small>Extra 1TB of cloud save</small>
+            </div>
+            <p class="price">+$2/mo</p>
+          </div>
+
+          <div class="box 3 flex">
+            <input type="checkbox">
+            <div class="description">
+              <h4>Customizable Profile</h4>
+              <small>Custom theme on your profile</small>
+            </div>
+            <p class="price">+$2/mo</p>
+          </div>
+        </form>
+        <div class="btn flex">
+          <button class="prev" type="button">Go Back</button>
+          <button class="next" type="submit">Next Step</button>
+        </div>
+      </div>
+      <!-- Step 3 end -->
+
+      <!-- Step 4 start -->
+      <div class="step-4 stp">
+        <div class="header">
+          <h1 class="title">Finishing up</h1>
+          <p class="sub-title">Double-check everything looks OK before confirming.</p>
+        </div>
+        <div class="selection-box">
+          <div class="selection-container">
+            <div class="select-plan flex">
+              <h4 class="plan-name">Arcade(Monthly)</h4>
+              <p class="plan-prices">$9/mo</p>
+            </div>
+            <div class="service flex">
+              <span class="service-name"></span>
+              <span class="service-price"></span>
+            </div>
+            <div class="storage flex">
+              <span class="service-name"></span>
+              <span class="service-price"></span>
+            </div>
+            <div class="profile flex">
+              <span class="service-name"></span>
+              <span class="service-price "></span>
+            </div>
+          </div>
+          <p class="total">Total (per month) <b></b></p>
+        </div>
+        <div class="btn flex">
+          <button class="prev" type="button">Go Back</button>
+          <button class="next" type="submit">Confirm</button>
+        </div>
+      </div>
+      <!-- Step 4 end -->
+
+      <!-- Step 5 start -->
+      <div class="step-5 stp">
+        <div class="header flex">
+          <img src="./assets/images/icon-thank-you.svg" alt="">
+          <h1 class="title">Thank you!</h1>
+        </div>
+        <p class="end-messages">Thanks for confirming your subscription! We hope you have fun
+          using our platform. If you ever need support, please feel free
+          to email us at support@loremgaming.com.</p>
+      </div>
+      <!-- Step 5 end -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
